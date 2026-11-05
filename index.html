@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>제코 스튜디오</title>
+<meta name="description" content="제코 스튜디오(Zekco Studios)의 모바일 게임 SUMBLE, Wind Shot: Crossbow Range 안내와 개인정보처리방침">
+<style>
+  :root {
+    --bg: #f6f7fb;
+    --card: #ffffff;
+    --text: #151a2d;
+    --muted: #5b6275;
+    --line: #e2e5ee;
+    --accent: #3b5bdb;
+    --accent-soft: #e8edff;
+    --mark-bg: #10182f;
+    --mark-text: #ffd84d;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0b1020;
+      --card: #141b31;
+      --text: #edf1fb;
+      --muted: #a3abc2;
+      --line: #263052;
+      --accent: #8ea6ff;
+      --accent-soft: #1d2847;
+      --mark-bg: #1d2847;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 56px 16px 40px; }
+  header { margin-bottom: 40px; }
+  .brand { display: flex; align-items: center; gap: 14px; }
+  .mark {
+    width: 52px; height: 52px; border-radius: 14px; flex: none;
+    display: grid; place-items: center;
+    background: var(--mark-bg); color: var(--mark-text);
+    font-weight: 800; font-size: 26px; letter-spacing: -0.02em;
+  }
+  h1 { margin: 0; font-size: 28px; letter-spacing: -0.02em; }
+  .en { margin: 0; color: var(--muted); font-size: 15px; }
+  .intro { margin: 20px 0 0; color: var(--muted); font-size: 16px; }
+  h2 { font-size: 15px; color: var(--muted); font-weight: 600; margin: 0 0 14px; letter-spacing: 0.02em; }
+  .games { display: grid; gap: 16px; }
+  .game {
+    background: var(--card); border: 1px solid var(--line); border-radius: 18px;
+    padding: 20px; display: flex; gap: 18px; align-items: flex-start;
+  }
+  .icon { width: 72px; height: 72px; border-radius: 18px; flex: none; object-fit: cover; }
+  .icon--text {
+    display: grid; place-items: center; background: var(--accent-soft); color: var(--accent);
+    font-weight: 800; font-size: 30px;
+  }
+  .game h3 { margin: 0; font-size: 19px; letter-spacing: -0.01em; }
+  .game p { margin: 4px 0 12px; color: var(--muted); font-size: 15px; }
+  .links { display: flex; flex-wrap: wrap; gap: 8px; }
+  .links a {
+    display: inline-block; padding: 7px 12px; border-radius: 999px;
+    border: 1px solid var(--line); color: var(--text); text-decoration: none; font-size: 14px;
+  }
+  .links a.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+  @media (prefers-color-scheme: dark) { .links a.primary { color: #0b1020; } }
+  .links a:hover { border-color: var(--accent); }
+  .contact { margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; }
+  .contact a { color: var(--accent); }
+  footer { margin-top: 24px; color: var(--muted); font-size: 13px; }
+  @media (max-width: 480px) {
+    .wrap { padding-top: 36px; }
+    .game { flex-direction: column; gap: 12px; }
+    .icon { width: 60px; height: 60px; border-radius: 15px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <div class="mark" aria-hidden="true">Z</div>
+      <div>
+        <h1>제코 스튜디오</h1>
+        <p class="en">Zekco Studios</p>
+      </div>
+    </div>
+    <p class="intro">손안에서 가볍게 즐기는 모바일 게임을 만듭니다.</p>
+  </header>
+
+  <main>
+    <h2>게임</h2>
+    <div class="games">
+      <article class="game">
+        <img class="icon" src="sumble-icon.png" alt="SUMBLE 아이콘" width="72" height="72">
+        <div>
+          <h3>SUMBLE</h3>
+          <p>숫자 공을 이어 목표 합계를 만드는 퍼즐 게임. 스테이지, 타임어택, 오늘의 도전, AI·친구 대결.</p>
+          <div class="links">
+            <a class="primary" href="https://play.google.com/store/apps/details?id=com.sumble.numberball">Google Play</a>
+            <a href="sumble-privacy/">개인정보처리방침</a>
+            <a href="sumble-privacy/delete.html">계정 삭제 안내</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="game">
+        <div class="icon icon--text" aria-hidden="true">W</div>
+        <div>
+          <h3>Wind Shot: Crossbow Range</h3>
+          <p>석궁 사격 게임.</p>
+          <div class="links">
+            <a href="windshot-privacy/">Privacy Policy</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <p class="contact">문의: <a href="mailto:zekcostudios@gmail.com">zekcostudios@gmail.com</a></p>
+  <footer>© 2026 Zekco Studios</footer>
+</div>
+</body>
+</html>
